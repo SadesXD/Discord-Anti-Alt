@@ -1,0 +1,32 @@
+{
+  "name": "discord-anti-alt",
+  "version": "1.0.0",
+  "description": "Simple npm package for help you to make anti alt account system for discord server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "anti-alt",
+    "sadesxd",
+    "discord.js",
+    "alt-account",
+    "discord-anti-alt",
+    "rumus-bdr",
+    "javascript"
+  ],
+  "author": "SadesXD",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SadesXD/Discord-Anti-Alt"
+  },
+  "homepage": "https://github.com/SadesXD/Discord-Anti-Alt#readme",
+  "bugs": {
+    "url": "https://github.com/SadesXD/Discord-Anti-Alt/issues"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
