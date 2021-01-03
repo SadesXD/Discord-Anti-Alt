@@ -48,7 +48,7 @@ List of usage:
 ## Full_usage
 ```js
 const Discord = require("discord.js");
-const client = new discord.Client();
+const client = new Discord.Client();
 
 // Usage
 const alt = require("discord-anti-alt");
@@ -82,7 +82,7 @@ client.login("Your Secret token");
 ## Give_role
 ```js
 const Discord = require("discord.js");
-const client = new discord.Client();
+const client = new Discord.Client();
 
 // Usage
 const alt = require("discord-anti-alt");
@@ -117,7 +117,7 @@ client.login("Your Secret token");
 ## Kick_Ban
 ```js
 const Discord = require("discord.js");
-const client = new discord.Client();
+const client = new Discord.Client();
 
 // Usage
 const alt = require("discord-anti-alt");
