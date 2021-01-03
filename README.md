@@ -61,7 +61,7 @@ let altChannel = "779585627595210772"; //Channel ID will you set as logs channel
 
 client.on('guildMemberAdd', async member => {
     let play = account.run(member);
-    let info = alt.profile(); //Show the information about alt user
+    let info = alt.profile(member); //Show the information about alt user
     if(play){
         //Your message when someone join the server using alt account
         const embed = new Discord.MessageEmbed()
@@ -96,7 +96,7 @@ let altChannel = "779585627595210772"; //Channel ID will you set as logs channel
 
 client.on('guildMemberAdd', async member => {
     let play = account.run(member);
-    let info = alt.profile(); //Show the information about alt user
+    let info = alt.profile(member); //Show the information about alt user
     if(play){
         //Your message when someone join the server using alt account
         const embed = new Discord.MessageEmbed()
@@ -130,7 +130,7 @@ let altChannel = "779585627595210772"; //Channel ID will you set as logs channel
 
 client.on('guildMemberAdd', async member => {
     let play = account.run(member);
-    let info = alt.profile(); //Show the information about alt user
+    let info = alt.profile(member); //Show the information about alt user
     if(play){
         //Your message when someone join the server using alt account
         const embed = new Discord.MessageEmbed()
