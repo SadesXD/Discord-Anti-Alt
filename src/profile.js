@@ -1,6 +1,9 @@
 const moment = require("moment")
 
 function profile(member){
+    if(!member){
+        return new TypeError("Can't find the member selection");
+    }
     let x = Date.now() - member.user.createdAt
     let created = Math.floor(x / 86400000)
 
