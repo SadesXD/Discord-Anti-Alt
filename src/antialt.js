@@ -3,7 +3,6 @@ class antiAlt{
       
         this.days = options.days
         this.options = options.options
-        this.role = options.role
 
         if(!this.days)
         {
@@ -19,18 +18,6 @@ class antiAlt{
         {
             return new TypeError("days options must be number, Received options: " + typeof this.days)
         };
-
-        if(this.options === "giveRole"){
-            if(!this.role){
-                return new TypeError("You're options is giving role to someone, but i can't see the spesifics role will you give, please put it first")
-            }
-        };
-
-        if(this.role){
-            if(this.options !== "giveRole"){
-                return new TypeError("You're options is not giving role to someone, you need to change your options")
-            }
-        }
 
         if(typeof this.options !== "string")
         {
@@ -70,12 +57,6 @@ class antiAlt{
             else if(this.options.toLowerCase() === "kick")
             {
                 return orang.kick("Kick by Discord anti alt").catch(() => {
-                    return new TypeError(`I don't have enough role permission for activated anti alt account system in server: ${member.guild.name},guildID: ${member.guild.id}`)
-                })
-            }
-            else if(this.options.toLowerCase() === "giveRole"){
-                let role = member.guild.roles.cache.find(x => x.id === this.role)
-                member.guild.members.cache.get(member.user).roles.add(role).catch(err => {
                     return new TypeError(`I don't have enough role permission for activated anti alt account system in server: ${member.guild.name},guildID: ${member.guild.id}`)
                 })
             }
