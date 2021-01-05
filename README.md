@@ -33,9 +33,6 @@ client.on('guildMemberAdd', async member => {
 })
 ```
 
-List of usage:
-- [Full Usage](#full_usage)
-- [Kick / Ban Alt user](#kick_ban)
 
 ## Full_usage
 ```js
@@ -47,41 +44,6 @@ const alt = require("discord-anti-alt");
 const account = new alt.config({
     days: 2,// only user who has less than 2 days ages will got kick
     options: "kick"
-});
-
-let altChannel = "779585627595210772"; //Channel ID will you set as logs channel
-
-client.on('guildMemberAdd', async member => {
-    let play = account.run(member);
-    let info = alt.profile(member); //Show the information about alt user
-    if(play){
-        //Your message when someone join the server using alt account
-        const embed = new Discord.MessageEmbed()
-        .setAuthor(info.userTag,info.avatar)
-        .setColor("RANDOM")
-        .addField("Username",info.username)
-        .addField("UserID",info.userID)
-        .addField("User Age",info.userAge)
-        .setTimestamp()
-        return member.guild.channels.cache.get(altChannel).send(embed)
-        //You can also send a normal message
-    }
-})
-
-client.login("Your Secret token");
-```
-
-
-## Kick_Ban
-```js
-const Discord = require("discord.js");
-const client = new Discord.Client();
-
-// Usage
-const alt = require("discord-anti-alt");
-const account = new alt.config({
-    days: 2,// Only user who has less than 2 days ages will got kick
-    options: "kick"// You can also set it to "ban"
 });
 
 let altChannel = "779585627595210772"; //Channel ID will you set as logs channel
