@@ -8,12 +8,6 @@ npm install discord-anti-alt
 ## 🔎 About
 <b>Discord Anti Alt</b> is simple npm package for help you to make anti alt account system for discord server
 
-<b><h4>List: </h4></b>
-- [Installation](#installation)
-- [About](#about)
-- [Usage](#usage)
-- [opinion](#opinion)
-
 ## 🔧 Usage
 
 <b>Configurations ( config ):</b>
@@ -34,7 +28,8 @@ const account = new alt.config({
 
 client.on('guildMemberAdd', async member => {
     account.run(member);
-    alt.profile(member); // show information about alt user
+    let userProfile = alt.profile(member); 
+    console.log(userProfile);// show information about alt user
 })
 ```
 
